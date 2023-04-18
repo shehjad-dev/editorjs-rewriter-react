@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ce-header {
+    font-weight: bold;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+.ce-block__content h1 {
+    font-size: xx-large;
+}
+.ce-block__content h2 {
+    font-size: x-large;
+}
+.ce-block__content h3 {
+    font-size: larger;
+}
+.ce-block__content h4 {
+    font-size: large;
+}
+.ce-block__content h5 {
+    font-size: medium;
+}
+
+/* Paraphraser block styling */
+.paraPhrase-wrapper {
+    background-color: #f0fdfa;
+    border: 2px solid #14b8a6;
+    color: #0f766e;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+    margin: 0.85rem 0 0.85rem 0;
+}
+
+.paraPhrase-header {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* paraInput.classList.add("bg-transparent");
+        paraInput.classList.add("h-auto");
+        paraInput.classList.add("w-full");
+        paraInput.classList.add("h-full");
+        paraInput.classList.add("py-3");
+        paraInput.classList.add("px-6");
+        paraInput.classList.add("rounded-xl");
+        paraInput.classList.add("border-teal-500");
+        paraInput.classList.add("border-2");
+        paraInput.classList.add("focus:border-teal-600");
+        paraInput.classList.add("focus:outline-none");
+        paraInput.classList.add("transition-all");
+        paraInput.classList.add("ease-in");
+        paraInput.classList.add("duration-75"); */
+
+.paraPhrase-input {
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 2px solid #14b8a6;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    outline: 2px solid transparent;
+}
+
+.paraPhrase-input:focus {
+    /* border: 2px solid #134e4a; */
+    outline: 2px solid #134e4a;
+}
+
+.paraPhrase-btn-wrapper {
+    margin-top: 1.25rem;
+    text-align: right;
+}
+
+.paraphrase-btn {
+    border: 2px solid #0f766e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #334155;
+}
