@@ -3,9 +3,9 @@ import "notyf/notyf.min.css";
 
 const notyf = new Notyf();
 
-/* const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 const API_HOST = import.meta.env.VITE_API_HOST;
-const API_URL = import.meta.env.VITE_API_URL; */
+const API_URL = import.meta.env.VITE_API_URL;
 
 class SimpleParaphraser {
     data: any;
@@ -98,18 +98,13 @@ class SimpleParaphraser {
                 method: "POST",
                 headers: {
                     "content-type": "application/json",
-                    "X-RapidAPI-Key":
-                        "daa8a938c2msh2962d2e208087d0p19b76bjsnd6d78da1f811",
-                    "X-RapidAPI-Host":
-                        "rewriter-paraphraser-text-changer-multi-language.p.rapidapi.com",
+                    "X-RapidAPI-Key": `${API_KEY.toString()}`,
+                    "X-RapidAPI-Host": `${API_HOST.toString()}`,
                 },
                 body: JSON.stringify(body),
             };
 
-            const response = await fetch(
-                "https://rewriter-paraphraser-text-changer-multi-language.p.rapidapi.com/rewrite",
-                options
-            );
+            const response = await fetch(`${API_URL.toString()}`, options);
             const data = await response.json();
 
             return data;
